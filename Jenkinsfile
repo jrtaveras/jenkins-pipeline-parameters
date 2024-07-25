@@ -7,12 +7,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                // Checkout the code from the repository
-                git 'https://github.com/tu-usuario/tu-repositorio.git'
-            }
-        }
         stage('Build') {
             steps {
                 echo 'Setting up Python environment...'
