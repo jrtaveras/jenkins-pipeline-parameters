@@ -12,8 +12,7 @@ pipeline {
                 echo 'Setting up Python environment...'
                 // Set up Python environment (optional)
                 sh 'python3 -m venv venv'
-                sh '. venv/bin/activate'
-                sh 'pip install -r requirements.txt' // If you have dependencies
+                sh '. venv/bin/activate'                
             }
         }
         stage('Execute') {
