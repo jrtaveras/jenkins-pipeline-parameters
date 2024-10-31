@@ -19,7 +19,7 @@ pipeline {
             steps {
                 echo 'Running Python script...'
                 // Run the Python script with the parameters
-                bat "python3 sum.py ${params.NUMBER1} ${params.NUMBER2}"
+                bat "py sum.py ${params.NUMBER1} ${params.NUMBER2}"
             }
         }
     }    
