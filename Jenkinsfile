@@ -12,7 +12,7 @@ pipeline {
                 echo 'Setting up Python environment...'
                 // Set up Python environment (optional)
                 bat 'py -m venv venv'
-                bat '. venv/bin/activate'                
+                //bat '. venv/bin/activate'                
             }
         }
         stage('Execute') {
